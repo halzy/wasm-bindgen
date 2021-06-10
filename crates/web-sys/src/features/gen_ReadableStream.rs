@@ -74,6 +74,7 @@ extern "C" {
         transform: &ReadableWritablePair,
         options: &StreamPipeOptions,
     ) -> ReadableStream;
+    #[cfg(web_sys_unstable_apis)]
     #[cfg(feature = "WritableStream")]
     # [wasm_bindgen (method , structural , js_class = "ReadableStream" , js_name = pipeTo)]
     #[doc = "The `pipeTo()` method."]
@@ -82,6 +83,7 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `ReadableStream`, `WritableStream`*"]
     pub fn pipe_to(this: &ReadableStream, destination: &WritableStream) -> ::js_sys::Promise;
+    #[cfg(web_sys_unstable_apis)]
     #[cfg(all(feature = "WritableStream", feature = "StreamPipeOptions",))]
     # [wasm_bindgen (method , structural , js_class = "ReadableStream" , js_name = pipeTo)]
     #[doc = "The `pipeTo()` method."]
