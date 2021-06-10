@@ -1,7 +1,6 @@
 #![allow(unused_imports)]
 use super::*;
 use wasm_bindgen::prelude::*;
-use wasm_bindgen::JsCast;
 #[wasm_bindgen]
 extern "C" {
     # [wasm_bindgen (extends = :: js_sys :: Object , js_name = ReadableStream , typescript_type = "ReadableStream")]
@@ -95,6 +94,7 @@ extern "C" {
         destination: &WritableStream,
         options: &StreamPipeOptions,
     ) -> ::js_sys::Promise;
+    # [wasm_bindgen (method , structural , js_class = "ReadableStream" , js_name = tee)]
     #[doc = "The `tee()` method."]
     #[doc = ""]
     #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream/tee)"]
