@@ -5290,6 +5290,30 @@ mod gen_ReadableStream;
 #[cfg(feature = "ReadableStream")]
 pub use gen_ReadableStream::*;
 
+#[cfg(feature = "ReadableStreamByobReadResult")]
+#[allow(non_snake_case)]
+mod gen_ReadableStreamByobReadResult;
+#[cfg(feature = "ReadableStreamByobReadResult")]
+pub use gen_ReadableStreamByobReadResult::*;
+
+#[cfg(feature = "ReadableStreamByobReader")]
+#[allow(non_snake_case)]
+mod gen_ReadableStreamByobReader;
+#[cfg(feature = "ReadableStreamByobReader")]
+pub use gen_ReadableStreamByobReader::*;
+
+#[cfg(feature = "ReadableStreamDefaultReadResult")]
+#[allow(non_snake_case)]
+mod gen_ReadableStreamDefaultReadResult;
+#[cfg(feature = "ReadableStreamDefaultReadResult")]
+pub use gen_ReadableStreamDefaultReadResult::*;
+
+#[cfg(feature = "ReadableStreamDefaultReader")]
+#[allow(non_snake_case)]
+mod gen_ReadableStreamDefaultReader;
+#[cfg(feature = "ReadableStreamDefaultReader")]
+pub use gen_ReadableStreamDefaultReader::*;
+
 #[cfg(feature = "ReadableStreamGetReaderOptions")]
 #[allow(non_snake_case)]
 mod gen_ReadableStreamGetReaderOptions;
@@ -5307,6 +5331,12 @@ pub use gen_ReadableStreamIteratorOptions::*;
 mod gen_ReadableStreamReaderMode;
 #[cfg(feature = "ReadableStreamReaderMode")]
 pub use gen_ReadableStreamReaderMode::*;
+
+#[cfg(feature = "ReadableWritablePair")]
+#[allow(non_snake_case)]
+mod gen_ReadableWritablePair;
+#[cfg(feature = "ReadableWritablePair")]
+pub use gen_ReadableWritablePair::*;
 
 #[cfg(feature = "RecordingState")]
 #[allow(non_snake_case)]
@@ -7246,6 +7276,12 @@ mod gen_TrackEventInit;
 #[cfg(feature = "TrackEventInit")]
 pub use gen_TrackEventInit::*;
 
+#[cfg(feature = "TransformStream")]
+#[allow(non_snake_case)]
+mod gen_TransformStream;
+#[cfg(feature = "TransformStream")]
+pub use gen_TransformStream::*;
+
 #[cfg(feature = "TransitionEvent")]
 #[allow(non_snake_case)]
 mod gen_TransitionEvent;
@@ -8007,6 +8043,18 @@ pub use gen_WorkletGlobalScope::*;
 mod gen_WorkletOptions;
 #[cfg(feature = "WorkletOptions")]
 pub use gen_WorkletOptions::*;
+
+#[cfg(feature = "WritableStream")]
+#[allow(non_snake_case)]
+mod gen_WritableStream;
+#[cfg(feature = "WritableStream")]
+pub use gen_WritableStream::*;
+
+#[cfg(feature = "WritableStreamDefaultWriter")]
+#[allow(non_snake_case)]
+mod gen_WritableStreamDefaultWriter;
+#[cfg(feature = "WritableStreamDefaultWriter")]
+pub use gen_WritableStreamDefaultWriter::*;
 
 #[cfg(feature = "XPathExpression")]
 #[allow(non_snake_case)]
