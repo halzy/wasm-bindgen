@@ -5260,6 +5260,12 @@ mod gen_PushSubscriptionOptionsInit;
 #[cfg(feature = "PushSubscriptionOptionsInit")]
 pub use gen_PushSubscriptionOptionsInit::*;
 
+#[cfg(feature = "QueuingStrategy")]
+#[allow(non_snake_case)]
+mod gen_QueuingStrategy;
+#[cfg(feature = "QueuingStrategy")]
+pub use gen_QueuingStrategy::*;
+
 #[cfg(feature = "RadioNodeList")]
 #[allow(non_snake_case)]
 mod gen_RadioNodeList;
